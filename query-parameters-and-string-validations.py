@@ -12,7 +12,7 @@ and indeed, the default value is 'None', so FastAPI will now it's not required.
 from typing import Union
 from fastapi import FastAPI
 
-app = FastAPI()
+app = FastAPI(root_path="/api")
 
 @app.get("/v1/items/")
 async def read_items(q: Union[str, None] = None):

@@ -28,7 +28,7 @@ Parameters:
 
 from fastapi import FastAPI
 
-app = FastAPI()
+app = FastAPI(root_path="/api")
 
 fake_items_db = [
     {"item_name": "Foo"},

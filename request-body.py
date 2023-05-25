@@ -113,7 +113,7 @@ class Item(BaseModel):
     price: float
     tax: Union[float, None] = None
 
-app = FastAPI()
+app = FastAPI(root_path="/api")
 
 @app.post("/v1/items/")
 async def create_item(item: Item):

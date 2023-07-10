@@ -2,12 +2,12 @@ export default function HomePage() {
   return (
     <form 
       className="w-2/6 h-3/4 min-w-[400px] mx-auto mt-28 p-10 rounded-3xl flex flex-col items-center shadow-xl"
-      action="https://ptilol.com/api/login"
+      action="http://localhost:8000/login"
       method="post"
     >
       <div className="w-full mb-4">
           <h1 className="mb-2 text-5xl text-center text-yellow-500">Welcome back!</h1>
-          <h2 className="text-center text-yellow-500">We're so excited to see you again!</h2>
+          <h2 className="text-center text-yellow-500">We are so excited to see you again!</h2>
       </div>
       <div className="w-full mb-4">
           <label className="mb-2 text-2xl block text-yellow-500" htmlFor="firstname">First Name:</label>

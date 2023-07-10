@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-app = FastAPI(root_path="/api")
+app = FastAPI()
 
 """
 You can declare path "parameters" or "variables" with the same syntax used 

@@ -31,7 +31,7 @@ from typing import Union
 from fastapi import FastAPI 
 from pydantic import BaseModel, EmailStr 
 
-app = FastAPI(root_path="/api")
+app = FastAPI()
 
 
 class UserIn(BaseModel):

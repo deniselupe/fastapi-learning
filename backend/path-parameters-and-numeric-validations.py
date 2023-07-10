@@ -16,7 +16,7 @@ from typing import Union
 from fastapi import FastAPI, Path, Query
 from typing_extensions import Annotated
 
-app = FastAPI(root_path="/api")
+app = FastAPI()
 
 @app.get("/")
 async def greet():

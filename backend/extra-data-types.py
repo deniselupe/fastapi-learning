@@ -72,7 +72,7 @@ from uuid import UUID
 from typing import Union
 from typing_extensions import Annotated
 
-app = FastAPI(root_path="/api")
+app = FastAPI()
 
 @app.put("/v1/items/{item_id}")
 async def read_items(

@@ -14,7 +14,7 @@ parameter `status_code` in any of the path operations:
 
 from fastapi import FastAPI
 
-app = FastAPI(root_path="/api")
+app = FastAPI()
 
 @app.post("/v1/items/", status_code=201)
 async def create_item(name: str):

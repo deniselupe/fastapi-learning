@@ -21,7 +21,7 @@ from fastapi import Body, FastAPI
 from pydantic import BaseModel, Field
 from typing_extensions import Annotated
 
-app = FastAPI(root_path="/api")
+app = FastAPI()
 
 @app.get("/")
 async def greet():
